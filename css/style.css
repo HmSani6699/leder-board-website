@@ -135,6 +135,66 @@ header {
     color: #9F9F9F;
 }
 
+/* lates course part */
+.course-items {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.course-item {
+    /* height: 300px;
+    width: 300px; */
+    padding: 10px;
+    box-shadow: 5px 5px 10px 2px gainsboro;
+    border-radius: 10px;
+}
+
+.course-item img {
+    width: 100%;
+}
+
+.course-title {
+    font-weight: 500;
+    font-size: 20.0336px;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+.title-author {
+    font-weight: 400;
+    font-size: 14.6913px;
+    margin: 8px 0;
+    color: #ED6B4F;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.fa-solid {
+    color: #FFC014;
+}
+
+.author-info span {
+    color: #A2A2A2;
+    font-weight: 400;
+    font-size: 14.6913px;
+    line-height: 22px;
+    margin-left: 5px;
+}
+
+.clock {
+    color: #ED6B4F;
+    background: #FFE4E8;
+    border-radius: 14.6913px;
+    padding: 5px;
+}
+
 /* small device */
 @media screen and (max-width:576px) {
 
@@ -181,6 +241,12 @@ header {
         width: 88%;
     }
 
+    /* lates course */
+    .course-items {
+        grid-template-columns: 1fr;
+    }
+
+
 }
 
 @media screen and (min-width:577px) and (max-width:768px) {
@@ -199,6 +265,11 @@ header {
     .top-blogs {
         grid-template-columns: 1fr;
     }
+
+    /* lates course */
+    .course-items {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (min-width:769px) and (max-width:992px) {
@@ -206,5 +277,10 @@ header {
     /* top blog part */
     .blog {
         flex-direction: column;
+    }
+
+    /* lates course */
+    .course-items {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
