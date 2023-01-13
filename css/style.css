@@ -9,6 +9,50 @@
 /* body */
 body {
     max-width: 1400px;
-    height: 100vh;
     margin: 0 auto;
+}
+
+/* min and header */
+main,
+header {
+    padding: 0 100px;
+}
+
+/* nav style */
+header {
+    background-color: #562EFF;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    color: white;
+}
+
+.nave-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nave-logo img {
+    width: 60px;
+    height: 65px;
+}
+
+.logo-title {
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li {
+    list-style: none;
+    margin-right: 36px;
 }
